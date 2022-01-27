@@ -30,7 +30,7 @@ cray-service:
             - key: app.kubernetes.io/name
               operator: In
               values:
-              - cray-sls
+              - cray-scsd
   strategy:
     rollingUpdate:
       maxUnavailable: 50%
