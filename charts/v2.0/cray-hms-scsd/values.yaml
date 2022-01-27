@@ -21,6 +21,20 @@ cray-service:
   nameOverride: "cray-scsd"
   fullnameOverride: "cray-scsd"
   replicaCount: 3
+  affinity:
+    podAntiAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+      - topologyKey: kubernetes.io/hostname
+        labelSelector:
+          matchExpressions:
+            - key: app.kubernetes.io/name
+              operator: In
+              values:
+              - cray-sls
+  strategy:
+    rollingUpdate:
+      maxUnavailable: 50%
+    type: RollingUpdate
   containers:
     cray-scsd:
       name: "cray-scsd"
