@@ -9,10 +9,16 @@
 
 global:
   appVersion: 1.11.0
+  testVersion: 1.11.0
 
 image:
   repository: artifactory.algol60.net/csm-docker/stable/cray-scsd
   pullPolicy: IfNotPresent
+
+tests:
+  image:
+    repository: artifactory.algol60.net/csm-docker/stable/cray-scsd-test
+    pullPolicy: IfNotPresent
 
 hms_ca_uri: ""
 
