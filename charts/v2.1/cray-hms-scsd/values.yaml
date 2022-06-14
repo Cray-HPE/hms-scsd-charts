@@ -8,9 +8,8 @@
 #   pullPolicy: "" (default = "IfNotPresent")
 
 global:
-  appVersion: 1.12.0
-  #testVersion: 1.11.0
-  testVersion: 1.12.0-20220614183943.a769d93
+  appVersion: 1.13.0
+  testVersion: 1.13.0
 
 image:
   repository: artifactory.algol60.net/csm-docker/stable/cray-scsd
@@ -18,8 +17,7 @@ image:
 
 tests:
   image:
-    #repository: artifactory.algol60.net/csm-docker/stable/cray-scsd-test
-    repository: artifactory.algol60.net/csm-docker/unstable/cray-scsd-test
+    repository: artifactory.algol60.net/csm-docker/stable/cray-scsd-test
     pullPolicy: Always
 
 hms_ca_uri: ""
