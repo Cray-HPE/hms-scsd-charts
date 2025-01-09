@@ -12,6 +12,9 @@ dependencies:
 maintainers:
   - name: Hardware Management
     url: https://github.com/orgs/Cray-HPE/teams/hardware-management
-appVersion: "1.21.0"
+appVersion: "1.21.0"  # update pprof image version below as well
 annotations:
+  artifacthub.io/images: |-
+    - name: cray-scsd-pprof
+      image: artifactory.algol60.net/csm-docker/stable/cray-scsd-pprof:1.21.0
   artifacthub.io/license: "MIT"
