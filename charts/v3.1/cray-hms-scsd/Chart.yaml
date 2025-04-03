@@ -16,5 +16,5 @@ appVersion: "1.22.0"
 annotations:
   artifacthub.io/images: |-
     - name: cray-scsd-pprof
-      image: artifactory.algol60.net/csm-docker/stable/cray-scsd-pprof:1.21.0
+      image: artifactory.algol60.net/csm-docker/stable/cray-scsd-pprof:1.22.0
   artifacthub.io/license: "MIT"
